@@ -1,0 +1,862 @@
+@font-face {
+  font-family: "nokian";
+  src: url("../fonts/Nokian.ttf");
+}
+
+@font-face {
+  font-family: "segoe";
+  src: url("../fonts/Segoebold.woff");
+}
+
+body {
+  overflow-x: hidden;
+}
+html {
+  scroll-behavior: smooth;
+}
+.navbar {
+  background-color: rgba(34, 34, 34, 0.8);
+}
+
+.main-footer {
+  background: #292929;
+  color: #fff;
+  width: 100%;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  margin-bottom: 0px;
+  position: bottom;
+}
+
+#port {
+  font-family: "Pacifico", cursive;
+  padding-top: 3.5%;
+}
+
+.ins {
+  font-family: "segoe" !important;
+}
+
+#dev {
+  font-family: "nokian";
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+#design {
+  background-image: url("../img/wowa.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+#developpement {
+  background-image: url("../img/working.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+#random {
+  width: 90%;
+  margin: auto;
+}
+
+#black {
+  color: #fff;
+}
+
+.device {
+  margin: 0;
+  position: relative;
+  display: inline-block;
+  width: 45%;
+}
+
+.device.tablet .device-hardware {
+  background-image: url(../img/tablet-lg.webp);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  display: block;
+  position: relative;
+  padding-bottom: 91.3%;
+}
+
+.device.tablet .device-screen {
+  top: 9.5%;
+  bottom: 35.5%;
+  left: 12.5%;
+  right: 11.5%;
+  border-radius: 1px;
+  background-size: 122% auto;
+  background-position-x: 50%;
+  background-position-y: 0%;
+  position: absolute;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  display: block;
+  -webkit-transition: background-position 0.4s;
+  -moz-transition: background-position 0.4s;
+  -o-transition: background-position 0.4s;
+  transition: background-position 0.4s;
+  background-color: #565656;
+  overflow: hidden;
+}
+
+.device.tablet .hover-trigger:hover .device-screen {
+  background-position-y: 50%;
+}
+
+.device .hover-name {
+  background-color: #6d9d17;
+  color: #efefef;
+  position: absolute;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 100%;
+  padding: 12px 6px;
+  top: -50px;
+  text-transform: uppercase;
+  text-align: center;
+  display: block;
+  left: 0;
+  right: 0;
+  width: 100%;
+  -webkit-transition: top 0.4s;
+  -moz-transition: top 0.4s;
+  -o-transition: top 0.4s;
+  transition: top 0.4s;
+  font-family: montserrat, Helvetica, Arial, sans-serif;
+}
+
+.device.tablet .hover-trigger:hover .hover-name {
+  top: -1px;
+}
+
+.device .hover-icon {
+  position: absolute;
+  left: 50%;
+  margin-left: -35px;
+  top: 30%;
+  color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.3);
+  width: 70px;
+  text-align: center;
+  line-height: 70px;
+  font-size: 30px;
+  height: 70px;
+  border-radius: 100%;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  opacity: 0;
+  -webkit-transform: scale(1.5);
+  -moz-transform: scale(1.5);
+  -o-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  transform: scale(1.5);
+}
+
+.device.tablet.device-list .hover-trigger:hover .hover-icon {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+}
+
+@media (max-width: 991px) {
+  .device {
+    width: 45%;
+  }
+
+  .flex-order-tablet_0 {
+    order: 0;
+    -ms-flex-order: 0;
+    -webkit-order: 0;
+    -moz-box-ordinal-group: 0;
+    -ms-box-ordinal-group: 0;
+    -webkit-box-ordinal-group: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .device {
+    width: 95%;
+  }
+}
+
+/*-----------------------*/
+
+.hero {
+  padding: 6.25rem 0px !important;
+  margin: -34px !important;
+}
+
+.cardbox {
+  border-radius: 3px;
+  margin-bottom: 20px;
+  padding: 0px !important;
+}
+
+/* ------------------------------- */
+/* Cardbox Heading
+---------------------------------- */
+.cardbox .cardbox-heading {
+  padding: 16px;
+  margin: 0;
+}
+
+.cardbox .btn-flat.btn-flat-icon {
+  border-radius: 50%;
+  font-size: 24px;
+  height: 32px;
+  width: 32px;
+  padding: 0;
+  overflow: hidden;
+  color: #fff !important;
+  background: #b5b6b6;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.cardbox .float-right .dropdown-menu {
+  position: relative;
+  left: 13px !important;
+}
+
+.cardbox .float-right a:hover {
+  background: #f4f4f4 !important;
+}
+
+.cardbox .float-right a.dropdown-item {
+  display: block;
+  width: 100%;
+  padding: 4px 0px 4px 10px;
+  clear: both;
+  font-weight: 400;
+  font-family: "Abhaya Libre", serif;
+  font-size: 14px !important;
+  color: #848484;
+  text-align: inherit;
+  white-space: nowrap;
+  background: 0 0;
+  border: 0;
+}
+
+/* ------------------------------- */
+/* Media Section
+---------------------------------- */
+.media {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+.d-flex {
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+
+.media .mr-3 {
+  margin-right: 1rem !important;
+}
+
+.media img {
+  width: 48px !important;
+  height: 48px !important;
+  padding: 2px;
+  border: 2px solid #f4f4f4;
+}
+
+.media-body {
+  -ms-flex: 1;
+  flex: 1;
+  padding: 0.4rem !important;
+}
+
+.media-body p {
+  font-family: "Rokkitt", serif;
+  font-weight: 500 !important;
+  font-size: 14px;
+  color: #88898a;
+}
+
+.media-body small span {
+  font-family: "Rokkitt", serif;
+  font-size: 12px;
+  color: #aaa;
+  margin-right: 10px;
+}
+
+/* ------------------------------- */
+/* Cardbox Item
+---------------------------------- */
+.cardbox .cardbox-item {
+  position: relative;
+  display: block;
+}
+
+.cardbox .cardbox-item img {
+}
+
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.fw {
+  width: 100% !important;
+  height: auto;
+}
+
+/* ------------------------------- */
+/* Cardbox Base
+---------------------------------- */
+.cardbox-base {
+  border-bottom: 2px solid #f4f4f4;
+}
+
+.cardbox-base ul {
+  margin: 10px 0px 10px 15px !important;
+  padding: 10px !important;
+  font-size: 0px;
+  display: inline-block;
+}
+
+.cardbox-base li {
+  list-style: none;
+  margin: 0px 0px 0px -8px !important;
+  padding: 0px 0px 0px 0px !important;
+  display: inline-block;
+}
+
+.cardbox-base li a {
+  margin: 0px !important;
+  padding: 0px !important;
+}
+
+.cardbox-base li a i {
+  position: relative;
+  top: 4px;
+  font-size: 16px;
+  color: #8d8d8d;
+  margin-right: 15px;
+}
+
+.cardbox-base li a span {
+  font-family: "Rokkitt", serif;
+  font-size: 14px;
+  color: #8d8d8d;
+  margin-left: 20px;
+  position: relative;
+  top: 5px;
+}
+
+.cardbox-base li a em {
+  font-family: "Rokkitt", serif;
+  font-size: 14px;
+  color: #8d8d8d;
+  position: relative;
+  top: 3px;
+}
+
+.cardbox-base li a img {
+  width: 25px;
+  height: 25px;
+  margin: 0px !important;
+  border: 2px solid #fff;
+}
+
+/* ------------------------------- */
+/* Cardbox Comments
+---------------------------------- */
+.cardbox-comments {
+  padding: 10px 40px 20px 40px !important;
+  font-size: 0px;
+  text-align: center;
+  display: inline-block;
+}
+
+.cardbox-comments .comment-avatar img {
+  margin-top: 1px;
+  margin-right: 10px;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  width: 40px;
+  height: 40px;
+}
+
+.cardbox-comments .comment-body {
+  overflow: auto;
+}
+
+.search {
+  position: relative;
+  right: -60px;
+  top: -40px;
+  margin-bottom: -40px;
+  border: 2px solid #f4f4f4;
+  width: 100%;
+  overflow: hidden;
+}
+
+.search input[type="text"] {
+  background-color: #fff;
+  line-height: 10px;
+  padding: 15px 60px 20px 10px;
+  border: none;
+  border-radius: 4px;
+  width: 350px;
+  font-family: "Rokkitt", serif;
+  font-size: 14px;
+  color: #8d8d8d;
+  height: inherit;
+  font-weight: 700;
+}
+
+.search button {
+  position: absolute;
+  right: 0;
+  top: 0px;
+  border: none;
+  background-color: transparent;
+  color: #bbbbbb;
+  padding: 15px 25px;
+  cursor: pointer;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.search button i {
+  font-size: 20px;
+  line-height: 30px;
+  display: block;
+}
+
+/* ------------------------------- */
+/* Author
+---------------------------------- */
+.author a {
+  font-family: "Rokkitt", serif;
+  font-size: 16px;
+  color: #00c4cf;
+}
+
+.author p {
+  font-family: "Rokkitt", serif;
+  font-size: 16px;
+  color: #8d8d8d;
+}
+
+/* END INSTAGRAM */
+/* GRID */
+#grid {
+  padding-top: 0.4%;
+}
+
+#leanone {
+  margin-left: -12.5%;
+}
+
+#lmpsone {
+  margin-left: -2.5%;
+}
+#wayone {
+  margin-top: 2%;
+  margin-left: -3%;
+}
+#gascogne {
+  margin-top: 0.8%;
+  margin-left: 3.5%;
+}
+#costaya {
+  margin-top: 0.6%;
+  margin-left: -1%;
+}
+#grar {
+  margin-top: 0.6%;
+  margin-left: -1.5%;
+}
+#l3 {
+  margin-top: 2%;
+  margin-left: -5.5%;
+}
+#matteo {
+  margin-top: 1%;
+  margin-left: -2.7%;
+  width: 102%;
+}
+#greenytwo {
+  margin-top: 0.6%;
+  margin-left: -2%;
+}
+#greentwo {
+  width: 110.8%;
+}
+#lmpscar {
+  margin-top: 0.6%;
+  margin-left: -1.2%;
+}
+#nearlmps {
+  margin-top: 0.6%;
+}
+#leantwo {
+  margin-left: 53%;
+}
+#costand {
+  margin-left: -15%;
+}
+#covermyway {
+  margin-top: 1.5%;
+  margin-left: -7%;
+}
+#row6,
+#row7,
+#row8,
+#row9,
+#row11,
+#row12,
+#row13,
+#row14,
+#row15,
+#row16 {
+  margin-top: 0.6%;
+}
+#row10 {
+  margin-top: -4.3%;
+}
+#rightvid {
+  margin-left: 0.6%;
+}
+#greent {
+  margin-left: -1%;
+}
+#greenf {
+  margin-left: 2.5px;
+}
+#grefou,
+#grethre,
+#grefiv {
+  width: 106%;
+}
+#costatre {
+  margin-left: 0.3%;
+}
+#multi {
+  margin-left: -2.5%;
+}
+#multi img {
+  width: 115%;
+}
+#costafou {
+  margin-left: 0.2%;
+}
+#greenfive {
+  margin-left: 0.25%;
+}
+#glone {
+  margin-left: 2.5px;
+}
+#laster {
+  margin-left: -1%;
+}
+#slilast {
+  width: 98.5%;
+}
+#nafis {
+  width: 84.3%;
+  margin-left: 18.5%;
+}
+#greenos {
+  width: 125%;
+  margin-left: -3%;
+  margin-top: 1.5%;
+}
+#dodo {
+  width: 124.5%;
+  margin-left: -2.5%;
+}
+#storyone {
+  width: 107.5%;
+  margin-left: -4%;
+}
+#bambino {
+  width: 103%;
+  margin-left: -1%;
+}
+#ariz {
+  margin-left: -1%;
+  margin-top: 1.2%;
+  width: 105%;
+}
+#lastge {
+  width: 100.2%;
+  margin-left: -1.2%;
+  margin-top: 0.6%;
+}
+#grarvids {
+  width: 110%;
+}
+.vids {
+  width: 130%;
+  margin-left: -16%;
+}
+@media (max-width: 767px) {
+  #port {
+    font-size: 155%;
+    padding-top: 6%;
+    margin-bottom: -16%;
+  }
+  .search input[type="text"] {
+    width: 295px;
+  }
+  #grid {
+    margin-top: -28%;
+  }
+  #lmpsone {
+    width: 106%;
+    margin-left: -3%;
+    margin-top: 2%;
+  }
+  #wayone {
+    margin-top: -58.7%;
+    margin-left: 50.7%;
+    width: 52.2%;
+  }
+  #leanone {
+    margin-left: -3%;
+    width: 52.2%;
+    margin-top: 1%;
+  }
+  #gascogne {
+    margin-top: -5%;
+    margin-left: -11px;
+    width: 105.5%;
+  }
+  #costaya {
+    width: 101%;
+    margin-top: 1%;
+    margin-left: 0%;
+  }
+  #grar {
+    margin-top: 1%;
+    width: 101%;
+    margin-left: 0%;
+  }
+  #ig {
+    width: 88%;
+  }
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    width: 10px;
+  }
+  #l3 {
+    margin-top: 1%;
+    margin-left: -2%;
+    width: 104%;
+  }
+  #matteo {
+    margin-top: 1%;
+    margin-left: -2%;
+    width: 104%;
+  }
+  #greentwo {
+    width: 103.8%;
+    margin-left: 0.2%;
+    margin-top: 0.5%;
+  }
+  #lmpscar {
+    margin-top: 1%;
+    margin-left: 0;
+    width: 101%;
+  }
+  #costand {
+    margin-top: 1%;
+    margin-left: -8%;
+    width: 57%;
+  }
+  #leantwo {
+    margin-left: 50%;
+    margin-top: -63%;
+    width: 57%;
+  }
+  #covermyway {
+    margin-top: -4.5%;
+    margin-left: -7%;
+    width: 114%;
+  }
+  #grethre {
+    width: 102%;
+    margin-top: 0.5%;
+  }
+  #glone img {
+    width: 50.5%;
+    margin-top: 1%;
+    margin-left: -1.8%;
+  }
+  #costatre img {
+    width: 50.5%;
+    margin-top: -56.5%;
+    margin-left: 50.2%;
+  }
+  #castrol {
+    width: 102%;
+    margin-top: -4.5%;
+  }
+  #greenf {
+    margin-left: -3.8px;
+    width: 96.3%;
+    margin-top: 1%;
+  }
+  #grarvids {
+    width: 102.2%;
+    margin-left: -1.2%;
+    margin-top: 2%;
+  }
+  #costafou img {
+    width: 50.5%;
+    margin-top: -56.5%;
+    margin-left: 50.5%;
+  }
+  #silence {
+    width: 50.5%;
+  }
+  #greenfive {
+    margin-left: -1%;
+    margin-top: -3.5%;
+  }
+  #grefiv {
+    width: 102%;
+  }
+  #laster {
+    margin-left: -1%;
+    margin-top: 1%;
+  }
+  #slilast {
+    width: 102%;
+  }
+  #multi {
+    margin-left: -1%;
+    margin-top: 1%;
+  }
+  #multi img {
+    width: 102%;
+  }
+  #myvisa {
+    width: 102%;
+    margin-top: -27%;
+  }
+  #rightvid {
+    width: 102%;
+    margin-top: -34%;
+    margin-left: -1%;
+  }
+  #dodo {
+    width: 105%;
+    margin-left: -2.5%;
+    margin-top: -4%;
+  }
+  #greenos {
+    width: 105%;
+    margin-left: -2.5%;
+    margin-top: 1%;
+  }
+  #nafis {
+    width: 105%;
+    margin-left: -2.5%;
+    margin-top: 1%;
+  }
+  #storyone {
+    width: 105%;
+    margin-left: -2.5%;
+    margin-top: 0.5%;
+  }
+  #bambino {
+    width: 105%;
+    margin-left: -2.5%;
+    margin-top: 1%;
+  }
+  #ariz {
+    margin-left: -2.5%;
+    margin-top: 1.2%;
+    width: 105%;
+  }
+  #dev {
+    font-size: 155%;
+  }
+  .navbar {
+    margin: 0px;
+  }
+  .aricar {
+    width: 51.5%;
+  }
+  .arocars {
+    margin-top: -57.5%;
+    margin-left: 51.2%;
+  }
+  .leftar {
+    margin-left: -2%;
+  }
+  .instewla {
+    margin-left: -1%;
+  }
+  .topar {
+    margin-top: -3%;
+  }
+  .topara {
+    margin-top: 1%;
+  }
+  #niswan {
+    width: 104%;
+    margin-top: -4%;
+    margin-left: -0.5%;
+  }
+  #leanwan {
+    width: 104.2%;
+    margin-top: 2%;
+    margin-left: -2%;
+  }
+  #arlong {
+    width: 103.5%;
+    margin-top: 1%;
+    margin-left: -0.5%;
+  }
+  #arnine {
+    width: 103.3%;
+    margin-top: 2%;
+    margin-left: -1.7% !important;
+  }
+  #colapi {
+    margin-left: -17%;
+    margin-top: 1.5%;
+  }
+  #colapiuno {
+    width: 103.7%;
+  }
+  #mawong {
+    width: 102.5%;
+    margin-top: 2%;
+    margin-left: -0.5%;
+  }
+}
