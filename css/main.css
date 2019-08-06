@@ -778,7 +778,9 @@ th {
   top: 0;
   bottom: 0;
 }
-
+.contina {
+  height: 100%;
+}
 .container.fullwidth {
   width: 100%;
 }
@@ -3021,15 +3023,26 @@ h6 {
   .chan {
     margin-top: 2.2rem !important;
   }
+  .beza {
+    margin-top: -0.8rem !important;
+  }
   .lempe {
     margin-top: 1.7rem !important;
   }
   #pakha {
     margin-top: 1.7rem !important;
   }
+  .merlo {
+    margin-top: -1.5rem !important;
+    width: 55%;
+}
   .azieo {
     margin-top: 1rem !important;
   }
+  .renta{
+    width: 111%;
+    margin-left: -6%;
+}
   .grarlogo,
   .costalogo {
     margin-top: 0rem !important;
@@ -3066,12 +3079,12 @@ h6 {
   }
   #techs {
     font-size: 30px;
-    margin-left: 64px;
-    margin-top: -188% !important;
+    margin-left: 78px;
+    margin-top: -180% !important;
     position: absolute;
   }
   #mobiconati {
-    margin-top: -165% !important;
+    margin-top: -167% !important;
     position: absolute;
     margin-left: -4%;
   }
