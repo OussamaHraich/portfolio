@@ -2567,6 +2567,26 @@ h6 {
   margin-top: -29%;
   margin-left: -17%;
 }
+.seha {
+  width: 74%;
+  margin-top: -14%;
+  margin-left: -2%;
+}
+.salmia {
+  width: 96%;
+  margin-top: -14%;
+  margin-left: -2%;
+}
+.ac {
+  width: 122%;
+  margin-top: -10%;
+  margin-left: -11%;
+}
+.chong {
+  width: 50%;
+  margin-top: -21%;
+  margin-left: -3%;
+}
 .lfdr {
   width: 100%;
   margin-top: -27%;
@@ -3114,8 +3134,7 @@ h6 {
 #i2 {
   padding-right: 5px;
 }
-#i1 {
-}
+
 .tohv:hover {
   background-color: #fff;
 }
