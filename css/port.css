@@ -145,18 +145,18 @@ html {
 }
 .bloc8 {
   background-image: linear-gradient(
-    to top,
-    #f9f871,
-    #fbf271,
-    #fded71,
-    #fee771,
-    #ffe272,
-    #ffdd73,
-    #ffd975,
-    #ffd477,
-    #ffcf7a,
-    #ffca7e,
-    #ffc581,
-    #ffc185
+    to bottom,
+    #ffc185,
+    #e5b57e,
+    #cca979,
+    #b59d74,
+    #9f9070,
+    #938069,
+    #857263,
+    #74645c,
+    #625453,
+    #4d4548,
+    #3a3739,
+    #292929
   );
 }
