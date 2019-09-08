@@ -2259,7 +2259,6 @@ h6 {
   background-size: cover;
   height: 800px;
 }
-
 @media (max-width: 1199.98px) {
   .banner-area .fullscreen {
     height: 800px !important;
@@ -3042,14 +3041,14 @@ h6 {
   .merlo {
     margin-top: -1.5rem !important;
     width: 55%;
-}
+  }
   .azieo {
     margin-top: 1rem !important;
   }
-  .renta{
+  .renta {
     width: 111%;
     margin-left: -6%;
-}
+  }
   .grarlogo,
   .costalogo {
     margin-top: 0rem !important;
