@@ -530,11 +530,6 @@ B. Helpers
 /*-------------------------------------------
   -- Borders
 -------------------------------------------*/
-
-:root {
-    /* Border radius *//* Border bottom */
-}
-
 .ts-border-radius__sm {
     border-radius: .125rem;
     overflow: hidden;
@@ -1021,10 +1016,6 @@ B. Helpers
   -- Shadow
 -------------------------------------------*/
 
-:root {
-    /* Box shadow */
-}
-
 .ts-shadow__sm {
     box-shadow: 0 .125rem .3125rem rgba(0, 0, 0, .1);
 }
@@ -1083,9 +1074,6 @@ p {
     font-size: .8125rem !important;
 }
 
-.ts-xs-text-center {
-}
-
 @media (max-width: 35.9375rem) {
     .ts-xs-text-center {
         text-align: center !important;
@@ -1128,8 +1116,6 @@ p {
   -- Title
 -------------------------------------------*/
 
-.ts-title {
-}
 
 @media (max-width: 35.9375rem) {
     .ts-title {
@@ -1152,10 +1138,6 @@ p {
 .ts-title h5 {
     font-weight: normal;
     opacity: .5;
-}
-
-:root {
-    /* Transition *//*--tr-cubic: .5s cubic-bezier(.03,.18,.05,1.01);*/
 }
 
 /*-------------------------------------------
@@ -2160,9 +2142,6 @@ form label, .ts-form label {
             transform: scale(1.1) rotate(.01deg);
 }
 
-.ts-gallery__item.ts-half {
-}
-
 @media (min-width: 36rem) {
     .ts-gallery__item.ts-half {
         height: calc(12.5rem - 1rem);
@@ -2649,9 +2628,6 @@ body.nav-hovered #main-navigation .navbar-toggler {
     overflow: hidden;
 }
 
-.ts-content {
-}
-
 @media (max-width: 35.9375rem) {
     .ts-content {
         margin-top: 4.5rem;
@@ -3123,18 +3099,19 @@ h1 a.ts-underline {
     }
 }
 
-#mobile {
-    display: none;
+.mobile {
+    display: none !important;
   }
   
   @media only screen and (max-width: 500px) {
-    #bureau {
+    .bureau {
       display: none;
     }
   
-    #mobile {
+    .mobile {
       display: inherit !important;
     }
   }
+
 
   
