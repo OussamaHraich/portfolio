@@ -3,8 +3,7 @@
 <head>
 	<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<meta name="author" content="ThemeStarz">
-
+    <meta name="description" content="Prototypage et création de maquettes de sites web, applications mobile (UX/UI Design), visuels, flyers publicitaires, cartes de visite, logos et T-shirts designs.">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,600">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" type="text/css">
     <link rel="stylesheet" href="assets/font-awesome/css/fontawesome-all.min.css">
@@ -12,9 +11,16 @@
     <link rel="stylesheet" href="assets/css/odometer-theme-default.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="icon" href="assets/img/logos/logo.png">
-
 	<title>Hraich Oussama</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-156107350-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
+    gtag('config', 'UA-156107350-1');
+    </script>
 </head>
 <body class="has-loading-screen">
 <div class="ts-page-wrapper">
@@ -37,7 +43,7 @@
 
     </div>
 
-    <!--Main Left Navigation
+     <!--Main Left Navigation
     ====================================================================================================================
     -->
     <div id="main-navigation">
@@ -53,8 +59,34 @@
                 <!--Portfolio
                 ========================================================================================================
                 -->
+
                 <li class="nav-item">
-                    <a class="nav-link" href="travail/"  role="button">Portfolio</a>
+                    <a class="nav-link" href="#collapse-portfolio" data-toggle="collapse" role="button">Portfolio</a>
+                    <div class="collapse" id="collapse-portfolio">
+                        <ul class="nav flex-column">
+
+                            <!--Types-->
+
+                            <ul class="nav flex-column">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="travail/logos/">Logos</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="travail/maquettes/">Maquettes web</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="travail/communitymanagement/">Community management</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="travail/imprimables/">Imprimables</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="travail/videos/">Vidéos</a>
+                                </li>
+                            </ul>
+
+                        </ul>
+                    </div>
                 </li>
 
                 <!--Contact
@@ -120,27 +152,70 @@
                     <div class="row ts-gallery">
 
                         <div class="col-md-6">
-                            <a href="travail/bankingapp/" class="card ts-gallery__item">
+                            <a href="travail/logos/" class="card ts-gallery__item">
+                                <div class="ts-gallery__item-description">
+                                    <h4 class="typestitles" >Logos</h4>
+                                </div>
                                 <div class="ts-background ts-img-into-bg">
-                                    <img src="assets/img/work/webdesign/ba.jpg" alt="">
+                                    <img src="assets/img/work/logos/sm.jpg" alt="logos">
                                 </div>
                             </a>
                         </div>
                         <!--end gallery item-->
 
                         <div class="col-md-6">
-                            <a href="travail/carswebsite/" class="card ts-gallery__item">
+                            <a href="travail/maquettes/" class="card ts-gallery__item">
+                                <div class="ts-gallery__item-description text-dark" style="margin-bottom: 240px;">
+                                    <h4 class="typestitles" style="margin-bottom:0px;">Maquettes<br>Web</h4>
+                                    <div class="text-sm" >Sites web - Prototypes</div>
+                                </div>
                                 <div class="ts-background ts-img-into-bg">
-                                    <img src="assets/img/work/webdesign/ca.jpg" alt="">
+                                    <img src="assets/img/work/webdesign/ba.jpg" alt="sites web">
+                                </div>
+                            </a>
+                        </div>
+                        <!--end gallery item-->
+
+
+                        <div class="col-md-6">
+                            <a href="travail/communitymanagement/" class="card ts-gallery__item">
+                                <div class="ts-gallery__item-description" style="margin-bottom: -25px;">
+                                    <h4 style="text-align: right;margin-bottom: 0px;" class="typestitles">Community<br>Management</h4>
+                                    <div class="text-sm" style="text-align: right;">Réseaux sociaux</div>
+                                </div>
+                                <div class="ts-background ts-img-into-bg">
+                                    <img src="assets/img/work/webdesign/smbgg.jpg" alt="community management">
+                                </div>
+                            </a>
+                        </div>
+                        <!--end gallery item-->
+
+                        <div class="col-md-6">
+                            <a href="travail/print/" class="card ts-gallery__item">
+                                <div class="ts-gallery__item-description text-dark" id=imprimables style="margin-bottom: 280px;">
+                                    <h4 class="typestitles">Imprimables</h4>
+                                </div>
+                                <div class="ts-background ts-img-into-bg">
+                                    <img src="assets/img/work/depliants/s1m.jpg" alt="imprimables">
+                                </div>
+                            </a>
+                        </div>
+                        <!--end gallery item-->
+
+                        <div class="col-md-12">
+                            <a href="travail/videos/" class="card ts-gallery__item">
+                                <div class="ts-gallery__item-description">
+                                    <h4 class="typestitles">Vidéos</h4>
+                                </div>
+                                <div class="ts-background ts-img-into-bg">
+                                    <img src="assets/img/work/webdesign/vid-bg.jpg" alt="vidéos">
                                 </div>
                             </a>
                         </div>
                         <!--end gallery item-->
 
                     </div>
-                        <div class="text-center py-5">
-                            <a href="travail/" class="btn btn-outline-dark">Afficher Plus</a>
-                        </div>
+
                 </div>
             </section>
 
@@ -192,19 +267,19 @@
         ================================================================================================================
         -->
         <footer id="ts-footer" data-bg-color="#131419" >
-            <section  style="padding-top: 7rem;padding-bottom: 7rem;" class="mobile text-center">
-                <div class="container">
+            <section  style="padding-top: 7rem;padding-bottom: 7rem;" class="mobile">
+                <div class="container" style="width: 90%;">
 
                     <div class="row">
 
-                        <div class="col-md-6">
-                            <div class="ts-title">
-                                <h2>Contact</h2>
+                        <div class="col-md-4">
+                            <div class="ts-title text-center">
+                                <h4>Contact</h2>
                             </div>
                             <address class="ts-text-muted---white">
                                     <nav class="nav flex-column">
                                     <a href="tel:+212690009179" class="mb-2"><i class="fa fa-phone"></i> +212 6 90 00 91 79 </a>
-                                    <a href="mailto:hraich.oussama@gmail.com" class="mb-2"><i class="far fa-envelope"></i>Hraich.oussama@gmail.com</a>
+                                    <a href="mailto:hraich.oussama@gmail.com" class="mb-2"><i class="fa fa-envelope"></i> Hraich.oussama@gmail.com</a>
                                     <a href="https://www.behance.net/hraichoussama" class="mb-2"><i class="fab fa-behance"></i> Behance/hraichoussama</a>
                                     <a href="https://www.linkedin.com/in/oussama-hraich-23b84b164/" class="mb-2"><i class="fab fa-linkedin"></i> LinkedIn/oussamahraich</a>
                                 </ul>
@@ -213,15 +288,18 @@
                             </address>
                         </div>
 
-                        <div class="col-md-6">
-                            <div class="ts-title">
-                                <h2>Navigation</h2>
+                        <div class="col-md-4">
+                            <div class="ts-title text-center">
+                                <h4>Navigation</h4>
                             </div>
-                            <nav class="nav flex-column">
-                                <a class="nav-link" href="index.html">Accueil</a>
-                                <a class="nav-link" href="#apropos">À propos</a>
-                                <a class="nav-link" href="travail/">Portfolio</a>
-                                <a class="nav-link" href="contact/">Contact</a>
+                            <nav class="nav flex-column ts-text-muted---white">
+                                <a class="nav-link" style="text-decoration: none;" href="index.html">Accueil</a>
+                                <a class="nav-link" style="text-decoration: none;" href="travail/logos/">Logos</a>
+                                <a class="nav-link" style="text-decoration: none;" href="travail/maquettes/">Maquettes web</a>
+                                <a class="nav-link" style="text-decoration: none;" href="travail/communitymanagement/">Community management</a>
+                                <a class="nav-link" style="text-decoration: none;" href="travail/imprimables/">Imprimables</a>
+                                <a class="nav-link" style="text-decoration: none;" href="travail/videos/">Vidéos</a>
+                                <a class="nav-link" style="text-decoration: none;" href="contact/">Contact</a>
                             </nav>
                         </div>
 
@@ -229,18 +307,18 @@
                 </div>
             </section>
             <section id="ts-footer-main" class="bureau">
-                <div class="container text-center">
+                <div class="container">
 
-                    <div class="row ml-5">
+                    <div class="row">
 
-                        <div class="col-md-6">
+                        <div class="col-md-4">
                             <div class="ts-title">
-                                <h2>Contact</h2>
+                                <h3>Contact</h2>
                             </div>
                             <address class="ts-text-muted---white">
                                     <nav class="nav flex-column">
                                     <a href="javascript:void();" class="mb-3"><i class="fa fa-phone"></i>&nbsp; +212 6 90 00 91 79 </a>
-                                    <a href="mailto:hraich.oussama@gmail.com" class="mb-3"><i class="far fa-envelope"></i>&nbsp; Hraich.oussama@gmail.com</a>
+                                    <a href="mailto:hraich.oussama@gmail.com" class="mb-3"><i class="fa fa-envelope"></i>&nbsp; Hraich.oussama@gmail.com</a>
                                     <a href="https://www.behance.net/hraichoussama" class="mb-3"><i class="fab fa-behance"></i>&nbsp; Behance/hraichoussama</a>
                                     <a href="https://www.linkedin.com/in/oussama-hraich-23b84b164/" class="mb-3"><i class="fab fa-linkedin"></i>&nbsp; LinkedIn/oussamahraich</a>
                                 </ul>
@@ -249,16 +327,26 @@
                             </address>
                         </div>
 
-                        <div class="col-md-6">
+                        <div class="col-md-4">
                             <div class="ts-title">
-                                <h2>Navigation</h2>
+                                <h3>Navigation</h2>
                             </div>
-                            <nav class="nav flex-column">
-                                <a class="nav-link" href="index.html">Accueil</a>
-                                <a class="nav-link" href="#apropos">À propos</a>
-                                <a class="nav-link" href="travail/">Portfolio</a>
-                                <a class="nav-link" href="contact/">Contact</a>
+                            <nav class="nav flex-column ts-text-muted---white">
+                                <a class="nav-link" style="text-decoration: none;" href="index.html">Accueil</a>
+                                <a class="nav-link" style="text-decoration: none;" href="travail/logos/">Logos</a>
+                                <a class="nav-link" style="text-decoration: none;" href="travail/maquettes/">Maquettes web</a>
+                                <a class="nav-link" style="text-decoration: none;" href="travail/communitymanagement/">Community management</a>
                             </nav>
+                        </div>
+
+                        <div class="col-md-4" >
+                            <div class="col-md-4" style="padding-top: 22%;">
+                                <nav class="nav flex-column ts-text-muted---white">
+                                    <a class="nav-link" style="text-decoration: none;" href="travail/imprimables/">Imprimables</a>
+                                    <a class="nav-link" style="text-decoration: none;" href="travail/videos/">Vidéos</a>
+                                    <a class="nav-link" style="text-decoration: none;" href="contact/">Contact</a>
+                                </nav>
+                            </div>
                         </div>
 
                     </div>
@@ -270,8 +358,8 @@
     </div>
     <!--end page-->
 </div>
-
-	<script src="assets/js/jquery-3.3.1.min.js"></script>
+    
+    <script src="assets/js/jquery-3.3.1.min.js"></script>
 	<script src="assets/js/popper.min.js"></script>
 	<script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/imagesloaded.pkgd.min.js"></script>
