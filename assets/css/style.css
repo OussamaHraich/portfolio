@@ -1,87 +1,3 @@
-/*----------------------------------------------------------------------------------------------------------------------
-Project:	    Preus
-Version:        1.0.0
-
-Default Color   #000;
-Background Color  #fff;
-
-Body copy:		'Poppins', sans-serif; 16px;
-Headers:		'Poppins', sans-serif;
-
-----------------------------------------------------------------------------------------------------------------------*/
-
-/*----------------------------------------------------------------------------------------------------------------------
-[Table of contents]
-
-A. Basic Styling
-  -- Styling
-
-B. Helpers
-  -- animations
-  -- align
-  -- borders
-  -- colors
-  -- column-count
-  -- background
-  -- height
-  -- margin
-  -- list
-  -- no-gutters
-  -- opacity
-  -- overflow
-  -- padding
-  -- position
-  -- shadow
-  -- typography
-  -- title
-  -- transitions
-  -- utilities
-  -- video-bg
-  -- width
-  -- z-index
-
-C. Components
-  -- block
-  -- blockquote
-  -- blog
-  -- box
-  -- buttons
-  -- card
-  -- circle
-  -- description-list
-  -- forms
-  -- footer
-  -- gallery
-  -- hr
-  -- inputs
-  -- item
-  -- list
-  -- loading-screen
-  -- map
-  -- member
-  -- hero
-  -- navbar
-  -- page
-  -- partners
-
-D. Plugins Styles
-  -- Magnific Popup
-  -- Owl Carousel
-
-E. Template Specific Elements
-  -- Other
-
-
-----------------------------------------------------------------------------------------------------------------------*/
-
-/***********************************************************************************************************************
-A. Basic Styling
-***********************************************************************************************************************/
-
-/*-------------------------------------------
-  -- Styling - Colors, Font Size, Font Family
--------------------------------------------*/
-
 body {
     font-family: 'Poppins', sans-serif;
     font-size: 1rem;
@@ -202,13 +118,7 @@ h6, .ts-h6 {
     font-size: 1rem;
 }
 
-/***********************************************************************************************************************
-B. Helpers
-***********************************************************************************************************************/
 
-/*-------------------------------------------
-  -- Animations
--------------------------------------------*/
 
 [data-animate] {
     opacity: 0;
@@ -520,16 +430,11 @@ B. Helpers
             transform: translateY(100%);
 }
 
-/* -- Align */
-
 .ts-align__vertical {
     display: flex;
     align-items: center;
 }
 
-/*-------------------------------------------
-  -- Borders
--------------------------------------------*/
 .ts-border-radius__sm {
     border-radius: .125rem;
     overflow: hidden;
@@ -611,9 +516,6 @@ B. Helpers
             column-count: 4;
 }
 
-/*-------------------------------------------
-  -- Background
--------------------------------------------*/
 
 [data-bg-image] {
     background-size: cover;
@@ -746,9 +648,6 @@ B. Helpers
     background-color: #000;
 }
 
-/*-------------------------------------------
-  -- Height
--------------------------------------------*/
 
 .ts-height--25vh {
     height: 25vh;
@@ -766,9 +665,6 @@ B. Helpers
     height: 100vh;
 }
 
-/*-------------------------------------------
-  -- Margin
--------------------------------------------*/
 
 .ts-mt__0 {
     margin-top: 0 !important;
@@ -831,9 +727,6 @@ B. Helpers
     opacity: .4;
 }
 
-/*-------------------------------------------
-  -- No Gutters - Removes padding from col*
--------------------------------------------*/
 
 .no-gutters {
     margin-right: 0;
@@ -845,9 +738,6 @@ B. Helpers
     padding-left: 0;
 }
 
-/*-------------------------------------------
-  -- Opacity
--------------------------------------------*/
 
 .ts-opacity__5 {
     opacity: .05;
@@ -889,9 +779,6 @@ B. Helpers
     opacity: .9;
 }
 
-/*-------------------------------------------
-  -- Overflow
--------------------------------------------*/
 
 .ts-overflow-y--auto {
     overflow-y: auto;
@@ -909,9 +796,6 @@ B. Helpers
     overflow-y: hidden;
 }
 
-/*-------------------------------------------
-  -- Padding
--------------------------------------------*/
 
 .ts-pt__0 {
     padding-top: 0 !important;
@@ -929,9 +813,6 @@ B. Helpers
     padding-left: 0 !important;
 }
 
-/*-------------------------------------------
-  -- Position
--------------------------------------------*/
 
 /* Top */
 
@@ -1094,7 +975,19 @@ p {
 
 .ts-text-muted---white a:hover {
     color: #fff !important;
+    -webkit-mask-image: linear-gradient(-75deg, rgba(0,0,0,.6) 30%, #000 50%, rgba(0,0,0,.6) 70%);
+  -webkit-mask-size: 200%;
+  animation: shine 2s infinite;
 }
+@-webkit-keyframes shine {
+    from {
+      -webkit-mask-position: 150%;
+    }
+    
+    to {
+      -webkit-mask-position: -50%;
+    }
+  }
 
 .text-white a:not(.btn) {
     color: #fff;
@@ -1323,10 +1216,6 @@ p {
     z-index: 1000 !important;
 }
 
-/***********************************************************************************************************************
-C. Components
-***********************************************************************************************************************/
-
 /*-------------------------------------------
   -- Block
 -------------------------------------------*/
@@ -1452,6 +1341,7 @@ blockquote h2 {
 
 .ts-blog-thumb footer a:hover {
     opacity: 1;
+    
 }
 
 .blog-post {
