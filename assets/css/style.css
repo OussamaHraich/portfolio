@@ -2429,7 +2429,7 @@ body.has-loading-screen.loading-done #brand-navigation {
 
 #brand {
     align-items: center;
-    background-color: #000;
+    background-color: #1f1f1f;
     display: flex;
     padding: .5rem .75rem;
     left: -1rem;
