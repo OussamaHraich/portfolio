@@ -2189,9 +2189,9 @@ body.has-loading-screen:before {
 }
 
 body.has-loading-screen:after {
-    content: url("../../assets/img/loading.svg");
-    height: 2.5rem;
-    width: 2.5rem;
+    content: url("../../assets/img/loading.gif");
+    height: 2rem;
+    width: 2rem;
     position: fixed;
     margin: auto;
     bottom: 0;
