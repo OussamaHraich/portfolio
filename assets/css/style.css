@@ -2189,7 +2189,7 @@ body.has-loading-screen:before {
 }
 
 body.has-loading-screen:after {
-    content: url("../../assets/img/loading.gif");
+    content: url("../../assets/img/loading.svg");
     height: 2rem;
     width: 2rem;
     position: fixed;
