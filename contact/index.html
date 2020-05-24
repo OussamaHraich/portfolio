@@ -114,7 +114,51 @@
                     <h1 class="ts-text">Contact</h1>
                 </div>
             </div>
-            
+            <!-- Form -->
+            <section class="py-5 my-5">
+                <div class="container">
+                    <form action="https://api.staticforms.xyz/submit" id="myForm" method="post">
+                        <input type="hidden" name="accessKey" value="922de44e-44b8-4c8b-985d-8cde39107eda">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-labels pt-2 pb-2">Nom <span class="text-small text-muted">*</span></div>
+                                    <input class="form-inputs p-2 w-100 required" type="text" name="name">
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-labels pt-2 pb-2">Email <span class="text-small text-muted">*</span></div>
+                                    <input class="form-inputs p-2 w-100 required" type="email" name="email">
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-labels pt-2 pb-2">Téléphone</div>
+                                    <input class="form-inputs p-2 w-100" type="text" name="phone">
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-labels pt-2 pb-2">Sujet <span class="text-small text-muted">*</span></div>
+                                    <input class="form-inputs p-2 w-100 required" type="text" name="subject">
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-labels pt-2 pb-2">Message <span class="text-small text-muted">*</span></div>
+                                    <textarea class="form-inputs p-2 w-100 mb-3 required" name="message"></textarea>
+                                </div>
+                                <!-- Specify @ as reply to value if you want it to be customers email -->
+                                <!-- <input type="hidden" name="replyTo" value="@"> Optional -->
+                                <input type="hidden" name="redirectTo" value="https://oussamahraich.github.io/portfolio/contact">
+                                <div class="col-md-12">
+                                    <div id="botona">
+                                        <button class="learn-more float-right" type="submit" value="Submit">
+                                        <span class="circle" aria-hidden="true">
+                                            <span class="icon arrow"></span>
+                                        </span>
+                                        <span class="button-text">Envoyer</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                    </form>
+                </div>
+            </section>
+
+            <!-- Buttons -->
             <section class="py-5 my-5 bureau">
                 <div class="container">
                     <div class="row text-center flex-nowrap">
@@ -196,7 +240,7 @@
                 </div>
             </section>
 
-            <!-- Title -->
+            <!-- Location -->
             <div class="container-fluid" id="titcon">
                 <div class="ts-title">
                     <h1 class="ts-text">Localisez-moi</h1>
@@ -204,7 +248,7 @@
                 </div>
             </div>
 
-            <!-- Contact buttons -->
+            <!-- Map -->
 
             <div class="container-fluid py-5 my-5" style="padding: 0;">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d212753.59969013208!2d-7.727077376733595!3d33.57220859769721!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda7cd4778aa113b%3A0xb06c1d84f310fd3!2sCasablanca!5e0!3m2!1sfr!2sma!4v1581059854617!5m2!1sfr!2sma" id="map" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
@@ -322,6 +366,43 @@
 <script src="../assets/js/jquery-validate.bootstrap-tooltip.min.js"></script>
 <script src="../assets/js/leaflet.js"></script>
 <script src="../assets/js/custom.js"></script>
+<script>
+
+    var submitButton = $("#myForm button[type='submit']").attr("disabled", true);
+    
+    $("#botona").click(function(){
+        $.each($("#myForm .required"), function (index, value) {
+            if(!$(value).val()){
+                $(this).css({"background-color":"#FEEDED","border": "1px solid #D21C1C"});
+                
+            }
+        });
+    });
+
+    if(submitButton.attr("disabled", true)){
+        $("#myForm .circle").css("background-color","#747475");
+        $("#myForm .button-text").css("color","#747475");
+    }
+
+    $("#myForm .required").keyup(function () {
+        var valid = true;
+        $.each($("#myForm .required"), function (index, value) {
+            $(this).css({"background-color":"#F8F8F8","border": "0px"});
+            if(!$(value).val()){
+               valid = false;
+            }
+        });
+        if(valid){
+            $("#myForm .circle").css("background-color","#17181D");
+            $("#myForm .button-text").css("color","#17181d");
+            $(submitButton).attr("disabled", false);
+        } 
+        else{
+            $(submitButton).attr("disabled", true);
+        }
+    });
+
+</script>
 
 
 
