@@ -3321,5 +3321,13 @@ h1 a.ts-underline {
       }
       
       .req-text{
-        font-size: 12px;
+        font-size: 11px;
+      }
+      @media only screen and (max-width: 500px) {
+        .form-labels{
+            font-size: 13px;
+        }
+        .req-text{
+            font-size: 8px;
+          }
       }
