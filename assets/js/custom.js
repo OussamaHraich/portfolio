@@ -6,6 +6,24 @@ var resizeId;
 $(function() {
     "use strict";
 
+    $('.brand-carousel').owlCarousel({
+        loop:true,
+        margin:10,
+        autoplay:true,
+        dots:false,
+        responsive:{
+          0:{
+            items:3
+          },
+          600:{
+            items:3
+          },
+          1000:{
+            items:5
+          }
+        }
+      })
+
     var $body = $("body");
     var $mainNavigation = $("#main-navigation");
     var $navigation = $mainNavigation.find(".navbar-nav");
