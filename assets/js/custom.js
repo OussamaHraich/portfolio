@@ -9,7 +9,7 @@ $(function () {
   $("#brand").each(function () {
     $(this).children("a").each(function () {
     var oldattr = $(this).attr("href");
-    $(this).attr("href",window.location.origin+"/portfolio/"+oldattr);
+    $(this).attr("href",window.location.origin+"/portfolio"+oldattr);
     });
   });
 
