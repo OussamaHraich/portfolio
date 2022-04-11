@@ -3334,6 +3334,12 @@ h1 a.ts-underline {
         .req-text{
             font-size: 8px;
           }
+          #brand-navigation .navbar-toggler {
+            margin-right: auto;
+          }
+          #brand{
+            width: 100%;
+          }
       }
 
       .section-padding{
