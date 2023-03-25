@@ -94,7 +94,7 @@ h3, .ts-h3 {
 
 h4, .ts-h4 {
     font-size: 1.25rem;
-    margin-bottom: 1.875rem;
+    margin-bottom: -0.125rem;
     font-weight: 300;
 }
 
@@ -1993,7 +1993,7 @@ form label, .ts-form label {
 
 .ts-gallery__item {
     border-radius: 0;
-    height: 25rem;
+    height: 18rem;
     display: flex;
     margin-bottom: 2rem;
     justify-content: flex-end;
@@ -3055,7 +3055,7 @@ h1 a.ts-underline {
 }
 .typestitles{
     font-weight: 400;
-    font-size: 1.9rem;
+    font-size: 1.2rem;
 }
 .tpwi{
     text-shadow: #000 0px 0px 20px;
@@ -3416,3 +3416,68 @@ h1 a.ts-underline {
        transition: all 0.45s;
        opacity: 1;
    }
+ #sketch{
+    position: absolute;
+    margin-top: -14em;
+    right: 15%;
+    transform: rotate(33deg);
+    filter: drop-shadow(3px 3px 5px #5e5e5e );
+    width: 4%;
+ }
+ #figma{
+    position: absolute;
+    margin-top: -27em;
+    left: 5%;
+    transform: rotate(-30deg);
+    filter: drop-shadow(3px 3px 5px #5e5e5e );
+    width: 4%;
+ }
+ #xd{
+    position: absolute;
+    margin-top: -5em;
+    left: 55%;
+    transform: rotate(10deg);
+    filter: drop-shadow(3px 3px 5px #5e5e5e );
+    width: 3%;
+ }
+ .leme{
+    width:"20%";
+    margin-top: -4em;
+ }
+
+ @media screen and (max-width: 770px)  {
+ .designlogos{
+    display: none;
+    }
+    .leme{
+        width: 34%;
+    }
+}
+ @media screen and (max-width: 1080px)  {
+ #figma{
+    left: 80%;
+ }
+}
+.resumebutton{
+   text-align: center;
+   background-color: #1f1f1f;
+   padding: 25px;
+   font-size: 1.5em;
+   margin-left: 30%;
+   margin-right: 30%;
+   margin-top: 5%;
+   border-radius: 5px;
+}
+.resumebutton:hover{
+    background: linear-gradient(-45deg, #131419, #3A3B41);
+    animation: gradient 2s ease infinite;
+    background-size: 400% 400%;
+    filter: drop-shadow(3px 3px 5px #5e5e5e );
+}
+.resumebutton a{
+    text-decoration: none;
+    color: #f6f6f6;
+}
+.textUp{
+    justify-content: flex-start !important;
+}
