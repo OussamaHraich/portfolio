@@ -3457,7 +3457,29 @@ h1 a.ts-underline {
  #figma{
     left: 80%;
  }
+
 }
+
+
+.responsiveSS{
+    display:none;
+ }
+
+
+ @media screen and (max-width: 767px)  {
+    .mobcenter{
+        text-align: center;
+        margin-bottom: 3em;
+     }
+    .webSS{
+        display:none;
+     }
+     .responsiveSS{
+        display: block;
+     }
+   }
+
+
 .resumebutton{
    text-align: center;
    background-color: #1f1f1f;
@@ -3480,4 +3502,10 @@ h1 a.ts-underline {
 }
 .textUp{
     justify-content: flex-start !important;
+}
+.circle{
+    background-color: #131419 !important;
+}
+.circlemore{
+    background-color: #3A3B41 !important;
 }
