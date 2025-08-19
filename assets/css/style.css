@@ -3517,3 +3517,70 @@ h1 a.ts-underline {
 .zoomH:hover {
     transform: scale(1.05); 
   }
+
+ /* HERE'S the CSS for the CERTIFICATIONS PART */
+ /* Certifications Section */
+#certifications {
+  padding: 60px 0;
+}
+
+
+.certif-carousel .certif-item {
+  text-align: center;
+}
+
+.certif-carousel .certif-item img {
+  width: 100%;
+  max-width: 400px; /* keep consistent with website blocks */
+   box-shadow: .125rem .1875rem .9375rem rgba(0, 0, 0, .15);
+    border-radius: 8px;
+    padding: 10px; /* gives some spacing around the image */
+    background: #fff; /* optional, to make the shadow stand out */
+  margin: auto;
+  transition: transform 0.3s ease;
+}
+
+.certif-carousel .certif-item img:hover {
+  transform: scale(1.05);
+}
+
+/* Arrows styling (Owl default override) */
+.owl-carousel .owl-nav button.owl-prev,
+.owl-carousel .owl-nav button.owl-next {
+  position: absolute;
+  top: 40%;
+  transform: translateY(-50%);
+  background: #007bff;
+  color: #fff !important;
+  border-radius: 50%;
+  padding: 10px 15px !important;
+  font-size: 20px !important;
+  border: none;
+  transition: 0.3s ease;
+}
+
+.owl-carousel .owl-nav button.owl-prev:hover,
+.owl-carousel .owl-nav button.owl-next:hover {
+  background: #0056b3;
+}
+
+.owl-carousel .owl-nav button.owl-prev {
+  left: -50px;
+}
+
+.owl-carousel .owl-nav button.owl-next {
+  right: -50px;
+}
+.owl-nav button span:nth-child(2) {
+  display: none; /* hides the 2nd arrow (the small one) */
+}
+.owl-nav button span {
+  color: #888; /* grey by default */
+  font-size: 2rem; /* control arrow size */
+  transition: color 0.3s ease;
+}
+
+.owl-nav button:hover span {
+  color: #000; /* darker on hover */
+}
+
