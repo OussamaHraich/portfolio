@@ -3371,7 +3371,7 @@ h1 a.ts-underline {
  #sketch{
     position: absolute;
     animation: floatsketch 3s ease-in-out infinite;
-    margin-top: -14em;
+    margin-top: -20em;
     right: 15%;
     transform: rotate(33deg);
     filter: drop-shadow(3px 3px 5px #5e5e5e );
@@ -3390,7 +3390,7 @@ h1 a.ts-underline {
     position: absolute;
     animation: floatxd 3s ease-in-out infinite;
     margin-top: -5em;
-    left: 55%;
+    left: 68%;
     transform: rotate(10deg);
     filter: drop-shadow(3px 3px 5px #5e5e5e );
     width: 3%;
